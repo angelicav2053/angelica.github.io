@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<link rel = "stylesheet" href = "styles.css">
+<link href="https://fonts.googleapis.com/css?family=Courgette|IM+Fell+English+SC|Pacifico" rel="stylesheet">
+<script src ="script.js"> </script>
+<h1> Angelicas Amazing Fun Zone </h1>
+
+
+<head>
+  <body>
+
+
+
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'me')">All About Me</button>
+    <button class="tablinks" onclick="openCity(event, 'resturant')">Resturant Reviews</button>
+    <button class="tablinks" onclick="openCity(event, 'movie')">Movie Reviews</button>
+    <button class="tablinks" onclick="openCity(event, 'conspiracies')">Favorite Conspiracies</button>
+  </div>
+  <div id="me" class="tabcontent">
+    <h2> All About Me:</h2>
+  </head>
+  <body>
+    Hello I am Angelica Vega and I am 17. I am a girl who thinks she is very cool
+    and super funny. I am going into my senior year at Irma Lerma Rangel YWLS
+    and I feel like I am constantly going to have a
+    breakdown about it, but that is neither here nor there. I cannot wait to get
+    into a college though because I assume that is gonna be cool I have lots of
+    opinions and lots of love so get ready for it.
+  </body>
+  <img
+  alt= "Smiley Face"
+  id="myImage" src="smiley.png" alt="Smiley face" height="300" width="300">
+  <button onclick="document.getElementById('myImage').src='10.png'"alt="The Number Ten">Me</button>
+
+  <document.getElementById("myImage").style.display = "">
+  <button  onclick="document.getElementById('myImage').src='2.png'";
+  alt = "The Number Two" ;
+  onclick="alert('You')"; >You</button>
+
+</div>
+
+  <div id="resturant" class="tabcontent">
+    <head>
+    <h2><em>Restaurant Reviews:</em></h2>
+    </head>
+    <body>
+      <h3>Burger King:</h3>
+      <img
+      alt="1 out of 5 stars"
+      id="1star" src="star1.png" alt="onestar" height="100" width="500">
+
+
+
+        <p>It sucks. Let me tell you this is a terrible fast food restaurant.
+        They have terrible chicken nuggets. We would always trust in a restaurant
+        to have good chicken nuggets, but these legit suck. They offer you 'crispy'
+        chicken nuggets, but in reality they give you these wet blobs and it is
+        disgusting. And another thing there fries are too salty! Do they want me
+        to die of high blood pressure because that is honestly what they are going
+        for at this point. I do not mean to attack Burger King, but these things
+        had to be said. They do have good milkshakes and onions rings though.
+        That gives them their 1 out of 5 star status from Angelica. I really hate Burger King.</p>
+      </body>
+      
+  </div>
+
+  <div id="movie" class="tabcontent">
+    <head>
+      <h2><em>Movie Reviews:</em></h2>
+    </head>
+    <body>
+      <h3><em>Stand and Deliver:</em></h3>
+      <em>Stand and Deliver</em> is the greatest movie of all time. It has so
+      much to give and so much for you to learn from. It is about these high
+      schoolers who are basically set up for failure by society because of their
+      ethnicity, but soon they get a teacher who really cares for their education.
+      With this new teacher they are able to get a good education and learn about
+      the many opportunities they can have.
+    </body>
+  </div>
+
+  <div id="conspiracies" class="tabcontent">
+    <head>
+      <h2><em>Favorite Conspiracies:</em></h2>
+    </head>
+    <body>
+      <h3>Stevie Wonder:</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qQeKrMsz4h4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <p>This may seem crazy, but I am a ferm believer that Stevie Wonder is in no way blind.
+      I love this conspiracy because it is so out there, but it also makes so
+      much sense if you look at the evidence. Please look at the evidence because there
+      is no possible way this man is out here catching microphones that he should not be able to see.
+      He was also caught taking a picture. How do you know what your taking a picture of is even there Steve?! Learn more here:</p>
+      <a href="https://theconcourse.deadspin.com/stevie-wonder-is-not-blind-the-evidence-1641795715">Stevie Wonder</a>
+
+    </body>
+  </div>
+
+  <script>
+  function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+  }
+  </script>
+
+
+
+
+
+
+
+
+  </html>
